@@ -14,8 +14,8 @@ body{
     width: var(--left-width);
     background:url(images/cryptoV.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: 110%;
+    background-position: 10%;
     
 }
 
