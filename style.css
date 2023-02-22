@@ -1,0 +1,16 @@
+:root{
+    --left-width: 35vw;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+}
+
+.left-side{
+    width: var(--left-width);
+}
+
+.right-side{
+    width: calc(100vw - var(--left-width));
+}
