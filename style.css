@@ -57,7 +57,6 @@ p{
     width: calc(100vw - var(--left-width));
     background: linear-gradient(180deg, rgba(69,16,138,1) 0%, rgba(42,6,88,1) 60%);
     display: flex;
-    background-attachment: fixed;
 }
 
 #wave{
@@ -75,20 +74,22 @@ p{
 .content{
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap:2rem;
+    margin-top: 15%;
 }
 
 .description{
     color:white;
+    margin: 0 2rem 0 0;
 }
 
 .sign-up-fields{
-    width:90%;
+    max-width:90%;
     height:auto;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(128, 128, 128, 0.15);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.13);
@@ -98,9 +99,11 @@ p{
 .inputs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap:20px;
+    gap:10px;
+    
 }
+
+
 
 input, label {
     display:block;
@@ -108,15 +111,31 @@ input, label {
 input{
     font-size: 18px;
     border-radius: 6px;
-    padding: 8px;
-    margin:8px 0;
+    padding: 6px;
+    margin:6px 0;
     border:0;
     border-bottom:2px solid rgb(118, 116, 243);
     border-right:2px solid rgb(118, 116, 243);
-
-
 }
 
 label{
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+button {
+
+    /* remove default behavior */
+    appearance:none;
+    -webkit-appearance:none;
+
+    /* usual styles */
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:20%;
+
 }

@@ -33,45 +33,46 @@
             <div class="sign-up-fields">
                 <h2 style="margin-top:0;">Sign-up</h2>
 
-                <form name="message" method="post">
+                <form id="sign-up-form" name="credentials" method="post">
+                    <div class="inputs">
 
-                <div class="inputs">
+                        <div style="float:left;" class="field">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" placeholder='Joe'>
+                        </div>
+                        
+                        <div style="float:left;" class="field">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" placeholder='Goldberg'>
+                        </div>
+                        
 
-                    <div style="float:left;">
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" id="firstname" name="firstname" placeholder='Joe'>
-                    </div>
-                    
-                    <div style="float:left;">
-                        <label for="lastname">LAST NAME</label>
-                        <input type="text" id="lastname" name="lastname" placeholder='Goldberg'>
-                    </div>
-                    
+                        <div style="float:left;" class="field">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder='joe@example.com'>
+                        </div>
+                        
+                        <div style="float:left;" class="field">
+                            <label for="tlf">TLF NUMBER</label>
+                            <input type="tel" id="tlf" name="tlf" placeholder='123 456 789'>
+                        </div>
 
-                    <div style="float:left;">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" placeholder='joe@example.com'>
+                        <div style="float:left;" class="field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        
+                        <div style="float:left;" class="field">
+                            <label for="confirmPass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPass" name="confirmPass">
+                        </div>
                     </div>
-                    
-                    <div style="float:left;">
-                        <label for="tlf">TLF NUMBER</label>
-                        <input type="tel" id="tlf" name="tlf" placeholder='123 456 789'>
-                    </div>
+                </form>
 
-                    <div style="float:left;">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    
-                    <div style="float:left;">
-                        <label for="confirmPass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPass" name="confirmPass">
-                    </div>
-                </div>
             </div>
 
             <div class="submit">
-                <h2>Sign-up</h2> hey hello
+                <button type="submit" form="my-form">Submit</button>
             </div>
 
         </div>
