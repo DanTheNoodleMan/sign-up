@@ -46,13 +46,16 @@ body{
 
 p{
     margin:0;
+    font-family: 'prototyperegular', Arial, Helvetica, sans-serif;
+
 }
 
 .right-side{
     height: 100vh;
     width: calc(100vw - var(--left-width));
     background: linear-gradient(180deg, rgba(69,16,138,1) 0%, rgba(42,6,88,1) 60%);
-    
+    display: flex;
+
 }
 
 #wave{
@@ -65,4 +68,14 @@ p{
     align-self: center;
     margin-bottom: 1rem;
     font-family: 'prototyperegular', Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description{
+    color:white;
 }
