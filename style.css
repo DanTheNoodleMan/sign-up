@@ -86,7 +86,7 @@ p{
 }
 
 .sign-up-fields{
-    max-width:90%;
+    max-width:50%;
     height:auto;
     /* From https://css.glass */
     background: rgba(128, 128, 128, 0.15);
@@ -102,22 +102,12 @@ p{
     display: flex;
     flex-wrap: wrap;
     gap:12px;
-    max-width: 80%;
+    max-width: 100%;
 
 }
 
-@media only screen and (max-width: 1342px) {
-    .inputs{
-        display: flex;
-        flex-wrap: wrap;
-        gap:12px;
-        max-width: 100%;
-    }
 
-    .sign-up-fields{
-        max-width:80%;
-    }
-}
+
 
 .field1, .field3, .field5{
     margin-right: 3rem;
