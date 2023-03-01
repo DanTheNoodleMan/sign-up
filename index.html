@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
     <title>Sign-up</title>
 </head>
 <body>
@@ -38,33 +39,33 @@
 
                         <div style="float:left;" class="field1">
                             <label for="firstname">FIRST NAME</label>
-                            <input type="text" id="firstname" name="firstname" placeholder='Joe'>
+                            <input type="text" id="firstname" name="firstname" placeholder='Joe' required pattern="[A-Za-z]{1,20}">
                         </div>
                         
                         <div style="float:left;" class="field2">
                             <label for="lastname">LAST NAME</label>
-                            <input type="text" id="lastname" name="lastname" placeholder='Goldberg'>
+                            <input type="text" id="lastname" name="lastname" placeholder='Goldberg' required pattern="[A-Za-z]{1,20}">
                         </div>
                         
 
                         <div style="float:left;" class="field3">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder='joe@example.com'>
+                            <input type="email" id="email" name="email" placeholder='joe@example.com' required>
                         </div>
                         
                         <div style="float:left;" class="field4">
-                            <label for="tlf">TLF NUMBER</label>
-                            <input type="tel" id="tlf" name="tlf" placeholder='123 456 789'>
+                            <label for="phone" style="margin-bottom: 6px;">TLF NUMBER</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="‎">
                         </div>
 
                         <div style="float:left;" class="field5">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required placeholder="‎">
                         </div>
                         
                         <div style="float:left;" class="field6">
                             <label for="confirmPass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPass" name="confirmPass">
+                            <input type="password" id="confirmPass" name="confirmPass" required placeholder="‎">
                         </div>
                     </div>
                 </form>
@@ -82,5 +83,8 @@
 
     </div>
 
+
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

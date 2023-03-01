@@ -133,6 +133,19 @@ input:focus{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-bottom:2px solid greenyellow;
+    border-right:2px solid greenyellow;  
+}
+
 label{
     font-size: 13px;
     letter-spacing: 1px;
@@ -177,3 +190,28 @@ button:hover, button:focus{
     filter: brightness(1.15);
 
 }
+
+.iti__selected-flag{
+    width:100%;
+    background-color: #a071ff2f !important;
+}
+
+.iti__selected-flag{
+    color:#1F0553;
+}
+
+.field4, #phone{
+    width:250px;
+    margin-bottom: 6px;
+}
+
+.iti{
+    width: 76%;
+}
+
+.iti__country-list{
+    color:#1F0553;
+    font-size: 15px;
+}
+
+.iti__country.iti__highlight{color:#a171ff;}
