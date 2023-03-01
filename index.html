@@ -21,20 +21,17 @@
         <div class="content">
 
             <div class="paragraph">
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae 
-                    numquam et porro quis dolore libero doloremque id ullam sit delectus culpa 
-                    at impedit distinctio, debitis corporis quos exercitationem sapiente.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae 
-                    numquam et porro quis dolore libero doloremque id ullam sit delectus culpa 
-                    at impedit distinctio, debitis corporis quos exercitationem sapiente.
+                <p class="description">Be the first in line for the Blockchain Revolution!
+                    <br> <br>
+                    Sign up for the waitlist and enjoy weekly newsletters, as well as access to an early release.
+                    <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui tempora fugit accusantium recusandae delectus ipsam est modi molestiae.
                 </p>
             </div>
 
             <div class="sign-up-fields">
                 <h2 style="margin-top:0; letter-spacing: 2px;">Sign-up</h2>
 
-                <form id="sign-up-form" name="credentials" method="post">
+                <form id="sign-up-form" action="#">
                     <div class="inputs">
 
                         <div style="float:left;" class="field1">
@@ -60,12 +57,12 @@
 
                         <div style="float:left;" class="field5">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required placeholder="‎">
+                            <input type="password" id="password" name="password" required placeholder="‎" onkeyup="check();">
                         </div>
                         
                         <div style="float:left;" class="field6">
                             <label for="confirmPass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPass" name="confirmPass" required placeholder="‎">
+                            <input type="password" id="confirmPass" name="confirmPass" required placeholder="‎" onkeyup="check();">
                         </div>
                     </div>
                 </form>
@@ -73,7 +70,7 @@
             </div>
 
             <div class="submit">
-                <button type="submit" form="my-form">Create Account</button>
+                <button type="submit" form="sign-up-form">Create Account</button>
             </div>
             
             <p class="login-text">Already have an account? <a href="" class="login-link">Log in</a></p>
