@@ -89,7 +89,7 @@ p{
 }
 
 .sign-up-fields{
-    max-width:50%;
+    width:50%;
     height:auto;
     /* From https://css.glass */
     background: rgba(128, 128, 128, 0.15);
@@ -219,3 +219,90 @@ button:hover{
 }
 
 .iti__country.iti__highlight{color:#a171ff;}
+
+@media only screen and (max-width: 600px)  {
+
+    #wave{
+        display: none;
+    }
+
+    body{
+        flex-flow: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-img{
+        width: 100vw;
+        height: 100%;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+        margin:20px 0 0 0;
+        font-size: 30px;
+    }
+    .right-side{
+        width: auto;
+        height: auto;
+    }
+    .description{
+        width: auto;
+        margin: 10px 20px;
+
+    }
+    .left-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 7%;
+        align-items: center;
+    }
+
+    .sign-up-fields{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    
+    .field1, .field2, .field3, .field4, .field5, .field6{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .field4, #phone{
+        width:122%;
+        height:auto;
+        margin-bottom: 6px;
+    }
+
+    input{
+        font-size: 1rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .submit,
+    .login-text{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
+}
